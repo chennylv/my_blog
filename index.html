@@ -113,9 +113,7 @@
                     <nav class="header-menu">
                         <ul>
                         
-                            <li><a href="/blog.lvyuanjun.xyz">博客首页</a></li>
-                        
-                            <li><a href="/works">作品展示</a></li>
+                            <li><a href="/">博客首页</a></li>
                         
                             <li><a href="/FrontEndGuide">前端导航</a></li>
                         
@@ -188,9 +186,7 @@
             <nav class="header-menu">
                 <ul>
                 
-                    <li><a href="/blog.lvyuanjun.xyz">博客首页</a></li>
-                
-                    <li><a href="/works">作品展示</a></li>
+                    <li><a href="/">博客首页</a></li>
                 
                     <li><a href="/FrontEndGuide">前端导航</a></li>
                 
@@ -234,7 +230,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/01/07/demo/">13</a>
+      <a class="article-title" href="/2017/01/07/demo/">Gulp简单使用</a>
     </h1>
   
 
@@ -244,32 +240,8 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <!--展开全文-->
-<p><img src="mahua-logo.jpg" alt="mahua"></p>
-<p>##gulp是什么?<br>gulp是前端开发过程中对代码进行构建的工具，是自动化项目的构建利器；她不仅能对网站资源进行优化，而且在开发过程中很多重复的任务能够使用正确的工具自动完成；使用她，我们不仅可以很愉快的编写代码，而且大大提高我们的工作效率。</p>
-<p>gulp是基于Nodejs的自动任务运行器， 她能自动化地完成 javascript/coffee/sass/less/html/image/css 等文件的的测试、检查、合并、压缩、格式化、浏览器自动刷新、部署文件生成，并监听文件在改动后重复指定的这些步骤。在实现上，她借鉴了Unix操作系统的管道（pipe）思想，前一级的输出，直接变成后一级的输入，使得在操作上非常简单。</p>
-<p>##gulp常用地址：<br>在使用中有任何问题，欢迎反馈给我，可以用以下联系方式跟我交流</p>
-<ul>
-<li>gulp官方网址：<a href="http://gulpjs.com" target="_blank" rel="external">http://gulpjs.com</a></li>
-<li>gulp插件地址：<a href="http://gulpjs.com/plugins" target="_blank" rel="external">http://gulpjs.com/plugins</a></li>
-<li>gulp 官方API：<a href="https://github.com/gulpjs/gulp/blob/master/docs/API.md" target="_blank" rel="external">https://github.com/gulpjs/gulp/blob/master/docs/API.md</a></li>
-<li>gulp 中文API：<a href="http://www.ydcss.com/archives/424" target="_blank" rel="external">http://www.ydcss.com/archives/424</a></li>
-</ul>
-<p>##目录：</p>
-<ul>
-<li>1、安装nodejs</li>
-<li>2、使用命令行</li>
-<li>3、npm介绍</li>
-<li>4、选装cnpm</li>
-<li>5、全局安装gulp</li>
-<li>6、新建package.json文件</li>
-<li>7、本地安装gulp插件</li>
-<li>8、新建gulpfile.js文件</li>
-<li>9、运行gulp</li>
-<li>10、使用webstorm运行gulp任务</li>
-<li>11、总结</li>
-</ul>
-
+              <h1 id=""><a href="#" class="headerlink" title=" "></a> </h1><p><img src="img/熊本1.jpg" alt="熊本"><br>
+          
       
     </div>
     
@@ -278,6 +250,10 @@
       
 
       
+      
+        <p class="article-more-link">
+          <a  href="/2017/01/07/demo/#more">more >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
@@ -399,8 +375,8 @@
 
     <script>
         $(document).ready(function() {
-            var backgroundnum = 1;
-            var backgroundimg = "url(/background/bg-" + backgroundnum +".jpg)";
+            var backgroundnum = 31;
+            var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
             $("#mobile-nav").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
             $(".left-col").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
         })
