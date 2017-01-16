@@ -2749,8 +2749,8 @@ color
   text-align: right;
 }
 .article-more-link a {
-  background: #8caadd;
-  color: #eee;
+  background: #eee;
+  color: #8caadd;
   font-size: 12px;
   padding: 2px 8px 4px;
   line-height: 16px;
