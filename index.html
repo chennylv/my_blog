@@ -229,33 +229,8 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h1 id="ionic-—android开发一键式环境搭建"><a href="#ionic-—android开发一键式环境搭建" class="headerlink" title="ionic —android开发一键式环境搭建"></a>ionic —android开发一键式环境搭建</h1><h3 id="一、java环境配置"><a href="#一、java环境配置" class="headerlink" title="一、java环境配置"></a>一、java环境配置</h3><p>1、安装JDK开发环境<br>     下载网站：<a href="http://www.oracle.com/" target="_blank" rel="external">http://www.oracle.com/</a><br> <img src="http://images.cnitblog.com/blog/641601/201406/141837022175075.png" alt="jdk"><br> <img src="http://images.cnitblog.com/blog/641601/201406/141837092333398.png" alt="jdk"><br> <img src="http://images.cnitblog.com/blog/641601/201406/141837129834252.png" alt="jdk"></p>
-<ul>
-<li>开始安装JDK<br><img src="http://images.cnitblog.com/blog/641601/201406/141837152804351.jpg" alt="jdk"><ul>
-<li>修改安装目录(也可以自定义目录)<br><img src="http://images.cnitblog.com/blog/641601/201406/141837169365577.jpg" alt="jdk"><br>确定之后,单击“下一步”。<br>注：当提示安装JRE时,可以选择不要安装。</li>
-</ul>
-</li>
-</ul>
-<p><strong>2、配置环境变量：</strong><br>对于Java程序开发而言,主要会使用JDK的两个命令：javac.exe、java.exe。路径：C:\Java\jdk 1.7.0 _09\bin。但是这些命令由于不属于windows自己的命令,所以要想使用,就需要进行路径配置。 </p>
-<p>右键单击“计算机-属性-高级系统设置”,单击“环境变量”。在“系统变量”栏下单击“新建”,创建新的系统环境变量。<br> <img src="http://images.cnitblog.com/blog/641601/201406/141837179201878.png" alt="环境变量"><br> 接下来</p>
-<blockquote>
-<p><strong>(1)新建-&gt;变量名”JAVA_HOME”,变量值”C:\Java\jdk1.8.0_05”（即JDK的安装路径） </strong><br><strong>(2)编辑-&gt;变量名”Path”,在原变量值的最后面加上“;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin” </strong><br><strong>(3)在系统变量中新建-&gt;变量名“CLASSPATH”,变量值“.;%JAVA_HOME%\lib;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar”</strong></p>
-</blockquote>
-<p><strong>如：JAVA_HOME环境变量的操作如下：</strong><br><img src="http://images.cnitblog.com/blog/641601/201406/141837213112074.png" alt="环境变量"><br><img src="http://images.cnitblog.com/blog/641601/201406/141837222804145.jpg" alt="环境变量"></p>
-<p><strong>3、确认环境配置是否正确：</strong></p>
-<p>在控制台分别输入<strong>java,javac,java -version </strong>命令,出现如下所示的JDK的编译器信息,包括修改命令的语法和参数选项等信息。</p>
-<p>java命令：<br><img src="http://images.cnitblog.com/blog/641601/201406/141837234679916.png" alt="环境变量"><br><img src="http://images.cnitblog.com/blog/641601/201406/141837245308258.png" alt="环境变量"><br>javac命令：<br><img src="http://images.cnitblog.com/blog/641601/201406/141837262642929.png" alt="环境变量"><br>java -version命令：<br><img src="http://images.cnitblog.com/blog/641601/201406/141837281081398.png" alt="环境变量"></p>
-<h3 id="二、android环境（一键式安装）"><a href="#二、android环境（一键式安装）" class="headerlink" title="二、android环境（一键式安装）"></a>二、android环境（一键式安装）</h3><p><strong>1、</strong> 在一个磁盘目录下(我是在D盘)新建一个Android文件夹(文件夹的名字自己定义即可) ,打开此文件夹,在此文件夹下新建两个文件夹,一个是install,另一个是sdk。<br><strong>2、</strong> 下载安装android-studio-bundle-141.2422023-windows.exe(根据自己的电脑操作系统下载)<br>下载地址:<a href="http://www.android-studio.org/index.php/88-download/" target="_blank" rel="external">http://www.android-studio.org/index.php/88-download/</a></p>
-<p>下载之后双击安装,弹出安装窗口后,点击<strong>Next</strong>,下一个窗口再点击<strong>Next</strong>,下一个窗口再点击 I Agree,此时的窗口会有两个路径要选择,第一个路径就是步骤1中创建的install文件夹路径,第二个路径就是步骤1中创建的sdk文件夹路径,然后点击<strong>Next</strong>,下一个窗口再点击<strong>Next</strong>,下一个窗口再点击<strong>Install</strong>,开始安装。</p>
-<p>安装完成后,可以查看一下install和sdk这两个文件夹,里面就有了相应的文件。</p>
-<p><strong>3、配置环境变量</strong></p>
-<blockquote>
-<p><strong>(1)新建-&gt;变量名”ANDROID_HOME”,变量值”D:\Android\sdk”（即SDK的安装路径,我的安装目录为D:\Android\sdk） </strong><br><strong>(2)编辑-&gt;变量名”Path”,在原变量值的最后面加上“%ANDROID_HOME%\platform-tools; %ANDROID_HOME%\tools; ” (windows10以下系统按照上面的写,windows10系统分两次添加)</strong></p>
-</blockquote>
-<p>配置完环境变量,打开命令窗口(window键+R,输入cmd之后按下回车),输入命令adb,下面会出现一些内容,此时表明配置完环境变量成功。</p>
-<h3 id="三、开始使用ionic"><a href="#三、开始使用ionic" class="headerlink" title="三、开始使用ionic"></a>三、开始使用ionic</h3><p>打开命令窗口(window键+R，输入cmd之后按下回车)，输入<strong>npm install -g ionic cordova</strong><br>安装完成后，可以输入ionic -v查看ionic版本，输入cordova -v查看cordova版本</p>
-<p>然后在一个磁盘里建一个ionic文件夹(我的建在E盘注意此文件夹路径不要有中文),打开文件夹,然后按下shift+鼠标右键，选择”在此处打开命令窗口”,进入命令窗口,输入<strong>ionic start myprj tabs</strong>创建一个App工程,<br>输入<strong>cd myprj</strong>进入工程目录,输入<strong>ionic serve</strong>启动应用,自动在浏览器打开,输入<strong>ionic platform add android</strong>为工程添加平台编译选项,输入<strong>ionic build android</strong>进行编译。</p>
-
+              <h1 id="ionic-—android开发一键式环境搭建"><a href="#ionic-—android开发一键式环境搭建" class="headerlink" title="ionic —android开发一键式环境搭建"></a>ionic —android开发一键式环境搭建</h1><p><img src="http://img4.imgtn.bdimg.com/it/u=2616256753,4020483931&amp;fm=23&amp;gp=0.jpg" alt="0.0"><br>
+          
       
     </div>
     
@@ -264,6 +239,10 @@
       
 
       
+      
+        <p class="article-more-link">
+          <a  href="/2017/02/08/android/#more">more >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
